@@ -7,15 +7,3 @@ h1{
   width: 400px;
   border-radius: 5%;
 }
-p {
-  position: relative;
-  left: 50px;
-}
-.luffy
-{
-  position: absolute;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  left: 80px;
-  right: 100px;
-  color: fuchsia;
-}
