@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Account Registration Form</title>
+	<script type="text/javascript">
+		function validate() {
+			var first_name = document.getElementById("first name").value;
+			var middle_name = document.getElementById("middle name").value;
+			var last_name = document.getElementById("last name").value;
+			var email = document.getElementById("email").value;
+			var backupmail = document.getElementById("backupmail").value;
+			var password = document.getElementById("password").value;
+			var confirmPassword = document.getElementById("confirm-password").value;
+			var prefrences = document.getElementById("pref").value;
+			var city = document.getElementById("city").value;
+			var area = document.getElementById("area").value;
+			if (password != confirmPassword) 
+			{
+				alert("Passwords do not match.");
+				return false;
+			}
+			if (first_name === "" || middle_name === "" || last_name === "" || email === "" || backupmail === "" || 
+			password === "" || confirmPassword === "" || prefrences === "" || city === "" || area === "") 
+			{
+				alert("Please fill in all fields.");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</head>
+
+<body style="background-color: rgb(20, 14, 86);">
+	<h1 style="color: white; text-align: center;">Online Food Ordering</h1>
+	<img src="food.jpg" alt="" width="300" height="200" style="border-radius: 30px; display:block; margin:auto;">
+	<h2 style="color: white; text-align: center;">Account Registration</h2>
+	<form style="color: white; text-align: center;" method="post" onsubmit="return validate()">
+		<label for="first name">First Name: </label>
+		<input type="text" id="first name" name="first name">
+		<label for="middle name">Middle Name: </label>
+		<input type="text" id="middle name" name="middle name">
+		<label for="last name">Last Name: </label>
+		<input type="text" id="last name" name="last name"><br><br>
+		<label for="city">City:</label>
+		<input type="text" id="city" name="city">
+		<label for="area">Area:</label>
+		<input type="text" id="area" name="area"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+		<label for="backupmail">Backup Email:</label>
+		<input type="email" id="backupmail" name="backupmail"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+		<label for="confirm-password">Confirm Password:</label>
+		<input type="password" id="confirm-password" name="confirm-password"><br><br>
+		<label for="pref">Veg 🥬 </label>
+		<input type="checkbox" id="pref" name="pref">
+		<label for="pref">Non-Veg 🍗 </label>
+		<input type="checkbox" id="pref" name="pref"><br><br>
+		<a href="google.com"><input type="submit" value="Register" style="height: 50px; width: 100px; background-color: rgb(255, 255, 255); 
+				border-radius: 10px;"></a>
+	</form>
+</body>
+
+</html
