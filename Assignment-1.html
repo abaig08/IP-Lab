@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Assignment-1</title>
+</head>
+
+<body style="background-color: rgb(20, 20, 43); color: aliceblue;">
+    <u><h1 style="text-align: center;">Internet Programming Assignment-1</h1></u>
+    <br /><b>
+        <script>
+            let cars = ["Honda", "Toyota", "Nissan"];
+            let food = ["Biryani", "Chocolate ", "Honey"]
+            let friends = ["Aaron", "Athael", "Paul"]
+            let everything = cars.concat(food, friends)
+            document.write("Array of Cars: " + cars + "<br>");
+            document.write("Array of Food: " + food + "<br>");
+            document.write("Array of Friends: " + friends + "<br>");
+            document.write("Array of Everything: " + everything + "<br>");
+
+            document.write("<br>String Concatenation:<br>" + everything);
+
+            var x = cars.indexOf("Nissan")
+            document.write("<br><br>Index of Nissan in Cars: " + x);
+
+            document.write("<br><br>Sorted Cars: " + cars.sort());
+
+            document.writeln("<h3> Join </h3>");
+            let text = friends.join(" and ");
+            document.writeln(text);
+
+            document.writeln("<h3> Includes? </h3>");
+            document.writeln(food.includes("Chocolate", 3));
+
+        </script>
+    </b>
+</body>
+
+</html>
