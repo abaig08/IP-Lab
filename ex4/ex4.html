@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style2.css">
+    <script>
+        function Validate() {
+            var fname = document.myForm.fname.value;
+            var lname = document.myForm.lname.value;
+            var mail = document.myForm.mail.value;
+            var dob = document.myForm.dob.value;
+            var add = document.myForm.address.value;
+            var num = document.myForm.num.value;
+
+            if (fname == "") {
+                document.myForm.fname.focus();
+                return false;
+            }
+            if (lname == "") {
+                document.myForm.lname.focus();
+                return false;
+            }
+            if (mail == "") {
+                document.myForm.mail.focus();
+                return false;
+            }
+            if (dob == "") {
+                document.myForm.dob.focus();
+                return false;
+            }
+            if (add == "") {
+                document.myForm.address.focus();
+                return false;
+            }
+            if (num == "") {
+                document.myForm.num.focus();
+                return false;
+            }
+            if (!validateLetters(fname)) {
+                document.myForm.fname.focus();
+            }
+            if (!validateLetters(lname)) {
+                document.myForm.lname.focus();
+            }
+            if (!validateNumbers(num)) {
+                document.myForm.num.focus();
+            }
+            alert("Form Submitted.")
+        }
+        function validateLetters(a) {
+            var regex = /^[a-zA-Z]+$/;
+            if (regex.test(a)) {
+                return true;
+            } else {
+                window.alert("Enter only letters")
+                return false;
+            }
+        }
+        function validateNumbers(a) {
+            var regex = /^[0-9]{10}$/;
+            if (regex.test(a)) {
+                return true;
+            } else {
+                window.alert("Please enter only 10 numbers");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <div align="center">
+            <h1 class="box-shadow">Banking</h1>
+            <h3 style="padding-top:50px;">Registration Form:</h3>
+        </div>
+        <div class="container"><b>
+                <form name="myForm" onsubmit="return Validate()">
+                    <div class="elements">
+                        <label for="fname" style="margin-left: 5px;">First name:</label>
+                        <input type="text" name="fname">
+                        <label for="lname" style="margin-left: 150px;">Last name:</label>
+                        <input type="text" name="lname">
+                    </div>
+                    <div class="elements">
+                        <label for="fname">Email:</label>
+                        <input type="email" style="margin-left:40px;" size="30" name="mail">
+                    </div>
+                    <div class="elements">
+                        <label for="date">DOB:</label>
+                        <input type="date" style="margin-left:45px;" size="30" name="dob">
+                    </div>
+                    <div class="elements">
+                        <label for="add">Address:</label>
+                        <input type="text" style="margin-left:20px; height:100px" size="80" name="address">
+                    </div>
+                    <div class="elements">
+                        <label for="phno">PhoneNo:</label>
+                        <input type="text" style="margin-left:20px;" size="30" name="num">
+                    </div>
+                    <div class="elements">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </b>
+        </div>
+
+    </div>
+</body>
+
+</html>

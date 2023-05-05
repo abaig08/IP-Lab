@@ -1,0 +1,28 @@
+ <web-app>
+    <servlet>
+        <servlet-name>hiddenForms</servlet-name>
+        <servlet-class>hiddenForms</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hiddenForms</servlet-name>
+        <url-pattern>/hiddenForms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getage</servlet-name>
+        <servlet-class>name</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getage</servlet-name>
+        <url-pattern>/name</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>display</servlet-name>
+        <servlet-class>both</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>display</servlet-name>
+        <url-pattern>/both</url-pattern>
+    </servlet-mapping>
+</web-app>

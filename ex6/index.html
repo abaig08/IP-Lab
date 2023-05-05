@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #E6E6FA;
+        }h1{
+            color: #FDFD96;
+        }
+        
+        .bkg{
+            
+            background-color: #B0E0E6;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body align="center">
+    <h1 class="bkg">Create</h1>
+    <form action="./create" method="post">
+        <table cellpadding="10" align="center" >
+            <tr>
+                <td >
+                    <label for="id">ID:</label>
+                </td>
+                <td>
+                    <input type="text" id="id" name="id"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="grade">grade</label>
+
+                </td>
+                <td>
+                    <input type="text" id="grade" name="grade"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mark">mark</label>
+                </td>
+                <td>
+                    <input type="text" id="mark" name="mark"><br>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1 class="bkg">Click below to display student details</h1>
+    <a href="./display">Display all student details</a>
+
+    <br><br>
+    <h1 class="bkg">Alter</h1>
+    <form action="./update" method="get" >
+        <table cellpadding="10" align="center" >
+            <tr>
+                <td >
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label for="name">Mark:</label>
+                </td>
+                <td>
+                    <input type="text" name="mark">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h1 class="bkg">Delete</h1>
+    <form action="./delete" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Delete">
+    </form>
+
+</body>
+
+</html>
