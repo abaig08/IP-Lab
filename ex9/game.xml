@@ -1,0 +1,37 @@
+<gamelist>
+    <game>
+        <gamename>Valorant</gamename>
+        <gameyear>2023</gameyear>
+        <gametype>Action</gametype>
+        <gamemode>Online</gamemode>
+        <gameprice>25</gameprice>
+    </game>
+    <game>
+        <gamename>Fortnite</gamename>
+        <gameyear>2016</gameyear>
+        <gametype>PVP</gametype>
+        <gamemode>Online</gamemode>
+        <gameprice>30</gameprice>
+    </game>
+    <game>
+        <gamename>Minecraft</gamename>
+        <gameyear>2010</gameyear>
+        <gametype>Creative</gametype>
+        <gamemode>Offline</gamemode>
+        <gameprice>15</gameprice>
+    </game>
+    <game>
+        <gamename>Need for Speed</gamename>
+        <gameyear>2012</gameyear>
+        <gametype>Racing</gametype>
+        <gamemode>Offline</gamemode>
+        <gameprice>12</gameprice>
+    </game>
+    <game>
+        <gamename>Football</gamename>
+        <gameyear>2014</gameyear>
+        <gametype>Sports</gametype>
+        <gamemode>Offline</gamemode>
+        <gameprice>22</gameprice>
+    </game>
+</gamelist>
